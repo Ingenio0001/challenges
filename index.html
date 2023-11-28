@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:ital,wght@0,400;0,700;1,400&display=swap">
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+    }
+    .container {
+      border: 10px solid hsl(216, 50%, 16%);
+      box-sizing: border-box;
+      border-radius: 5%;
+      background-color: hsl(216, 50%, 16%);
+      width: 300px;
+      margin: 100px auto;
+      padding: 10px;
+    }
+
+    .mainimg {
+      width: 100%;
+      box-sizing: border-box;
+      border-radius: 5%;
+      
+    }
+
+    .maintext {
+      color: hsl(0, 0%, 100%);
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    .subtext, .days, .metatext {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+
+    
+    .eth {
+      color: hsl(178, 100%, 50%);
+      font-weight: 400;
+      font-size: 0.9rem;
+    }
+
+    .eth, .days {
+      display: inline-block;
+    }
+
+    .ethdays {
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+
+    .eth {
+      margin-right: 85px;
+    }
+
+    .avatar {
+      width: 25px;
+      border: 1px solid white;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .avatar, .metatext {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .metadata {
+      text-align: center;
+    }
+
+    #metavar {
+      color: hsla(0, 0%, 100%);
+      font-weight: 400;
+    }
+
+    .attribution { 
+      font-size: 11px; 
+      text-align: center; 
+      color: white;
+    }
+
+    .attribution a { 
+      color: hsl(228, 45%, 44%); 
+    }
+
+    hr {
+      border-color: hsl(215, 32%, 27%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/image-equilibrium.jpg" alt="image Equilibrium" class="mainimg">
+    <p class="maintext"> Equilibrium #3429</p>
+    <p class="subtext">Our Equilibrium collection promotes balance and calm.</p>
+    <img src="images/icon-ethereum.svg" alt="eth icon" class="ethdays"/><p class="eth">0.041 ETH</p>
+    <img src="images/icon-clock.svg" alt="clock icon" class="ethdays"/><p class="days">3 days left</p>
+    <hr />
+    <div class="metadata">
+      <img src="images/image-avatar.png" alt="avatar" class="avatar">
+      <p class="metatext">Creation of <span id="metavar">Jules Wyvern</span></p>
+    </div>
+    
+  </div>
+
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Boluwatife Alalade</a>.
+  </div>
+</body>
+</html>
